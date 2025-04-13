@@ -3,47 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica JavaScript 26-03-25</title>
+    <title>Descuentos</title>
+    <script defer src="practica_java.js"></script>
 </head>
 <body>
-<h1>Hola que tal esto es mi primera pagina de prueba JS</h1>
-<h2>Nuevos cambios </h2>
-
-<input type="text" id="pregunta" placeholder="¿Cual es tu apellido?: ">
-<button onclick="mostrarRespuesta()">Enviar</button>
-<h1 id="respuesta"></h1>
-
-
-<p id="mensaje"></p>
-<script>
-    function mostrarRespuesta(){
-        let apellido = document.getElementById("pregunta").value;
-        document.getElementById("respuesta").innerText = "Hola " +  apellido + "!";
+<style>
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
     }
+    center{
+        text-align: center;
+        color: blue;
+        font-size: 440vw;
 
-let nombre = prompt("¿Cómo te llamas?");
-let mensaje = "";
-
-if (nombre == "Pedro"){
-    mensaje = "Te llamas pedro? naaa feo nombre";
-}    else {
-    mensaje = "Alessandro ALTO NOMBRE AMIGOOO";
-    }
-mensaje +="Hola, " + nombre + "!";
-
-document.getElementById("mensaje").innerHTML= mensaje;
-</script>
-
-
-
-
-
-
-
-
-
-
-
-<script src="practica_java.js"></script>
+}
+</style>
+<h1 class="center">Descuentos Ejercicio</h1>
+<p id="mensaje">El descuento es de :</p>
+<button id="cambiarDescuento">Cambiar Descuento</button>
 </body>
 </html>
